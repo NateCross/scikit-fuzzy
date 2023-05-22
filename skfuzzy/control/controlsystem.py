@@ -134,6 +134,13 @@ class ControlSystem(object):
         fig, ax = ControlSystemVisualizer(self).view()
         fig.show()
 
+    def get_view(self):
+        """
+        Get the representation of the system NetworkX graph.
+        """
+        fig, ax = ControlSystemVisualizer(self).view()
+        return fig, ax
+
     def view_n(self):
         """
         View a representation of the system NetworkX graph.
