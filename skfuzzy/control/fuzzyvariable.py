@@ -123,6 +123,12 @@ class FuzzyVariable(object):
         """""" + FuzzyVariableVisualizer.view.__doc__
         fig, ax = FuzzyVariableVisualizer(self).view(*args, **kwargs)
         fig.show()
+    
+    def get_view(self, *args, **kwargs):
+        """""" + FuzzyVariableVisualizer.view.__doc__
+        fig, ax = FuzzyVariableVisualizer(self).view(*args, **kwargs)
+        return fig, ax
+
 
     def automf(self, number=5, variable_type='quality', names=None,
                invert=False):
